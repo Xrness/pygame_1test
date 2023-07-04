@@ -1,0 +1,20 @@
+import pygame as pg
+
+width = 500
+height = 500
+
+red = (255, 0, 0)
+
+
+pg.init()
+screen = pg.display.set_mode((width, height))
+
+pg.display.set_caption("block game")
+
+running = true
+while running:
+  for event in pg.event.get():
+   print(event)
+
+  screen.fill(red)
+  pg.display.update()
